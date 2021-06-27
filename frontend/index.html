@@ -1,48 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEBFOOD</title>
-    <link rel="stylesheet" href="css/bf_estiloSistema.css" type="text/css">
-</head>
-<body>
-
+    <title>BlueFood</title>
+    <link rel="stylesheet" type="text/css" href="css/bf_estiloSistema.css"/>
+  </head>
+  <body>
     <header>
-        <a href="home">
-            <div id="divLogotipoSistema">
-                <span id="spanAuxiliarDeAlinhamentoVertical"></span>
-                <img src="images/bf_logotipoSistema.png" alt="Logo" id="imgLogotipoSistema">
-            </div>
+      <div id="divLogotipoSistema">
+        <span id="spanAuxiliarDeAlinhamentoVertical"></span>
+        <a href="">
+          <img src="images/bf_logotipoSistema.png" id="imgLogotipoSistema">
         </a>
+      </div>
     </header>
     <br><br>
-
-    <!-- Fim de cabeçalho -->
-
-    <div>
-        <img src="images/bf_iconeUsuario.png" alt="Icone de Usuario" id="imgIconeUsuario">
-        <h1>Autenticação</h1>
-        <fieldset>
-        <form method="POST" action="">
-            <input type="text" name="email" placeholder="E-mail">
-            <input type="password" name="senha" placeholder="Senha">
-            <input type="button" value="Entrar">
-        </fieldset>
-        </form>
-        <br>
-
-        <div>
-            Exemplo de erro
-        </div><br>
-
-        <input type="button" value="Crie sua conta!"> <br>
-        <input type="button" value="Cadastre seu restaurante!">
-
-    </div>
-
+    <!-- Cabeçalho - Fim -->
     
-    <!-- Inicio rodapé -->
-</body>
+    <div>
+      <img src="images/bf_iconeUsuario.png" id="imgIconeUsuario"/>
+      <h1>Autenticação</h1>
+      <form method="post" action="">
+        <fieldset>
+          <input type="text" name="email" placeholder="E-mail..."/>
+          <input type="password" name="senha" placeholder="Senha..."/>
+          <input type="button" value="Entrar">
+        </fieldset>
+      </form>
+      <br>
+      
+      <div id="mensagemDeErro">
+        Aqui vai um exemplo de mensagem de erro
+      </div><br>
+      
+      <input type="button" value="Gostaria de criar a minha conta de usuário"/>
+      <br>
+      <input type="button" value="Gostaria de criar a minha conta de restaurante"/>
+    </div>
+    
+    <!-- Rodapé - Início -->
+  </body>
 </html>

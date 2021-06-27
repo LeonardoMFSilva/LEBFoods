@@ -1,75 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEBFOOD</title>
-</head>
-<body>
-
+    <title>BlueFood</title>
+    <link rel="stylesheet" type="text/css" href="css/bf_estiloSistema.css"/>
+  </head>
+  <body>
     <header>
-        <a href="index.html">
-            <div>
-                <img src="images/bf_logotipoSistema.png" alt="Logo">
-            </div>
+      <div id="divLogotipoSistema">
+        <span id="spanAuxiliarDeAlinhamentoVertical"></span>
+        <a href="">
+          <img src="images/bf_logotipoSistema.png" id="imgLogotipoSistema">
         </a>
-        <div>
-            Olá, Usuário!
-            <br>
-            <img src="images/bf_iconeCarrinho.png" alt="Icone carrinho de compras">
-        </div> 
+      </div>
+      <div id="divUsuarioLogado">
+        Olá Nome do Usuário!
+      </div>
     </header>
     <br><br>
+    <!-- Cabeçalho - Fim -->
 
-    <!-- Fim de cabeçalho -->
+		<div>
+			<h1>Cadastro de Restaurante</h1>
+			
+			<form method="post" action="">
+				<fieldset>
+					<label for="nome">Nome do Restaurante: </label><br>	
+					<input type="text" id="nome" name="nome" placeholder="Nome..."><br><br>
+					
+					<label for="cnpj">CNPJ: </label><br>	
+					<input type="text" id="cnpj" name="cnpj" placeholder="CNPJ..."><br><br>
+					
+					<label for="email">E-mail: </label><br>	
+					<input type="text" id="email" name="email" placeholder="E-mail..."><br><br>
+					
+					<label for="telefone">Telefone: </label><br>	
+					<input type="text" id="telefone" name="telefone" placeholder="Telefone..."><br><br>
+					
+					<label for="cep">CEP: </label><br>	
+					<input type="text" id="cep" name="cep" placeholder="CEP..."><br><br>
+					
+					<label for="categoria">Categoria de comida: </label><br>	
+					<select name="categoria" id="categoria">
+						<option>Salada</option>
+						<option>Churrasco</option>
+						<option>Pizza</option>
+						<option>Hamburguer</option>
+					</select><br><br>
+					
+					<label for="logotipo">Logotipo: </label><br>	
+					<input type="file" id="logotipo" name="logotipo" placeholder="Selecionar..."><br><br>
+					
+					<label for="senha">Senha: </label><br>	
+					<input type="password" id="senha" name="senha" placeholder="Senha..."><br><br>
+					
+					<div id="mensagemDeErro">
+						Aqui vai um exemplo de mensagem de erro
+					</div><br>
+			
+					<input type="button" value="Cadastrar">
+				</fieldset>
+			</form>
+			<br>
+			
+			<input type="button" value="Voltar">
+		</div>
 
-    <div>
-        <h1>Cadastro de Restaurante</h1>
-        
-        <form method="post" action="">
-            <fieldset>
-                <label for="nome">Nome do Restaurante: </label><br>	
-                <input type="text" id="nome" name="nome" placeholder="Nome..."><br><br>
-                
-                <label for="cnpj">CNPJ: </label><br>	
-                <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ..."><br><br>
-                
-                <label for="email">E-mail: </label><br>	
-                <input type="text" id="email" name="email" placeholder="E-mail..."><br><br>
-                
-                <label for="telefone">Telefone: </label><br>	
-                <input type="text" id="telefone" name="telefone" placeholder="Telefone..."><br><br>
-                
-                <label for="cep">CEP: </label><br>	
-                <input type="text" id="cep" name="cep" placeholder="CEP..."><br><br>
-                
-                <label for="categoria">Categoria de comida: </label><br>	
-                <select name="categoria" id="categoria">
-                    <option>Salada</option>
-                    <option>Churrasco</option>
-                    <option>Pizza</option>
-                    <option>Hamburguer</option>
-                </select><br><br>
-                
-                <label for="logotipo">Logotipo: </label><br>	
-                <input type="file" id="logotipo" name="logotipo" placeholder="Selecionar..."><br><br>
-                
-                <label for="senha">Senha: </label><br>	
-                <input type="password" id="senha" name="senha" placeholder="Senha..."><br><br>
-                
-                <div>
-                    Aqui vai um exemplo de mensagem de erro
-                </div><br>
-        
-                <input type="button" value="Cadastrar">
-            </fieldset>
-        </form>
-        <br>
-        
-        <input type="button" value="Voltar">
-    </div>
-    
-    <!-- Inicio rodapé -->
-</body>
+		<!-- Rodapé - Início -->
+		<br><br>
+	</body>
 </html>
