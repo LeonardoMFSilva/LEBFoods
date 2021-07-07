@@ -13,7 +13,7 @@ public class PublicController {
     @GetMapping("/cliente/new")
     public String newClient(Model model){
         Client client = new Client();
-        model.addAttribute("client", new Client());
+        model.addAttribute("cliente", new Client());
         return "cliente-cadastro";
     }
 }
