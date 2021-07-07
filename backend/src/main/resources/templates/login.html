@@ -21,8 +21,10 @@
         Aqui vai um exemplo de mensagem de erro
       </div><br>
 
-      <input type="button" value="Gostaria de criar a minha conta de usuário"/>
-      <br>
+      <form method="get" th:action="@{/public/client/new}">
+          <input type="submit" value="Gostaria de criar a minha conta de usuário" />
+      </form>
+
       <input type="button" value="Gostaria de criar a minha conta de restaurante"/>
     </div>
       </div>
