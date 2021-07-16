@@ -23,6 +23,7 @@ public class PublicController {
     public String newClient(Model model){
         Client client = new Client();
         model.addAttribute("cliente", new Client());
+        ControllerHelper.setEditMode(model, true);
         return "cliente-cadastro";
     }
 
